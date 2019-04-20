@@ -1,0 +1,41 @@
+{
+  "name": "kaze",
+  "version": "0.0.28",
+  "description": "async flow control lib implemented in promise way",
+  "main": "dist/index.js",
+  "types": "dist/kaze.d.ts",
+  "scripts": {
+    "clear": "rimraf built coverage .nyc_output",
+    "dev": "cross-env NODE_ENV=production rollup -w -c",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "test": "jest"
+  },
+  "bugs": "https://github.com/zzzgit/kaze/issues",
+  "keywords": [
+    "flow",
+    "control",
+    "promise",
+    "async"
+  ],
+  "license": "LGPL-3.0-or-later",
+  "engines": {
+    "npm": ">=6.5.0",
+    "node": ">=10.0"
+  },
+  "author": "jonkee",
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "ts-custom-error": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "^22.4.1",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.10.4",
+    "cross-env": "^5.2.0",
+    "jest": "^24.7.1",
+    "jest-dot-reporter": "^1.0.7",
+    "jest-simple-dot-reporter": "^1.0.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.3"
+  }
+}

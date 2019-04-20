@@ -1,0 +1,10 @@
+env:
+  node: true
+  commonjs: true
+  es6: true
+  jest: true
+plugin:
+  - 'jest'
+rules:
+  jest/no-identical-title:
+    - error
