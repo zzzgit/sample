@@ -10,12 +10,26 @@
 		"strictNullChecks": true,
 		"removeComments": true,
 		"declaration": true,
-		"outDir": "./built/",
-		"declarationDir": "./built/",
+		"outDir": "./built/lib/",
+		"declarationDir": "./built/t/",
 		"declarationMap": true,
 		"preserveWatchOutput": true,
 		"alwaysStrict": true,
 		"diagnostics": true,
-		"strict": true
+		"strict": true,
+		"noImplicitAny": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"noImplicitThis": true,
+		"listFiles": true,
+		"pretty": true,
+		"noEmitOnError": false,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"allowSyntheticDefaultImports": true
 	},
+	"exclude": [
+		"node_modules",
+		"test/**"
+	]
 }

@@ -1,14 +1,16 @@
 {
   "name": "kaze",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "async flow control lib implemented in promise way",
-  "main": "dist/index.js",
-  "types": "dist/kaze.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zzzgit/kaze"
+  },
+  "main": "built/lib/index.js",
+  "types": "built/t/index.d.ts",
   "scripts": {
-    "clear": "rimraf built coverage .nyc_output",
-    "dev": "cross-env NODE_ENV=production rollup -w -c",
-    "build": "cross-env NODE_ENV=production rollup -c",
-    "test": "jest"
+    "clean": "rimraf built coverage .nyc_output",
+    "build": "npm run clean && cross-env NODE_ENV=production rollup -c"
   },
   "bugs": "https://github.com/zzzgit/kaze/issues",
   "keywords": [
@@ -23,19 +25,14 @@
     "node": ">=10.0"
   },
   "author": "jonkee",
-  "dependencies": {
-    "eslint": "^5.16.0",
-    "ts-custom-error": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint-plugin-jest": "^22.4.1",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.10.4",
+    "@types/node": "^11.13.8",
     "cross-env": "^5.2.0",
-    "jest": "^24.7.1",
-    "jest-dot-reporter": "^1.0.7",
-    "jest-simple-dot-reporter": "^1.0.3",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.4.3"
+    "rimraf": "^2.6.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "typescript": "^3.4.5"
   }
 }
