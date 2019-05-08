@@ -10,7 +10,6 @@ coverage/
 selenium-debug.log
 .rpt2_cache/
 *.map
-**/*.js
 !index.js
 !jest.config.js
 .rpt2_cache
